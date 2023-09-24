@@ -2,7 +2,7 @@ name: Update GitHub Profile Graphs
 
 on:
   schedule:
-    - cron: '0 22 * * *'  # Schedule it to run every day at 4:00 AM UTC (adjust the time zone as needed)
+    - cron: '20 11 * * *'  # Schedule it to run every day at 4:00 AM UTC (adjust the time zone as needed)
 
 jobs:
   update:
