@@ -23,9 +23,9 @@ Before running the script, make sure you have the following installed:
 
 3. Run the Script:
 
-   ```bash
-   python codeforces.py
-This will generate graphical charts of your codeforces profile data and save them in their respective directory.
+      ```bash
+      python codeforces.py
+   This will generate graphical charts of your codeforces profile data and save them in their respective directory.
 
 4. To automatically update and push these images to your GitHub profile, set up GitHub Actions:
       - Refer yml file to understand workflow
