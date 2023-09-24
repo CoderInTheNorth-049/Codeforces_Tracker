@@ -2,7 +2,7 @@ name: Update GitHub Profile Graphs
 
 on:
   schedule:
-    - cron: '20 11 * * *'  # Schedule it to run every day at 4:00 AM UTC (adjust the time zone as needed)
+    - cron: '0 6 * * *'  # Schedule it to run every day at 4:00 AM UTC (adjust the time zone as needed)
 
 jobs:
   update:
@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Python script
-        run: codeforces.py  # Replace with your Python script filename
+        run: python codeforces.py  # Replace with your Python script filename
 
       - name: Commit and push changes
         run: |
