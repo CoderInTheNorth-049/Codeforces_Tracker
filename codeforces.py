@@ -148,9 +148,11 @@ if __name__ == '__main__':
                             va='center', fontsize=10, color='black', xytext=(0, 5),
                             textcoords='offset points')
 
-            # Add total problems solved as footer
+            # Add total problems solved as footer with a lower position
             total_solved_problems_text = f'Total Solved Problems: {total_solved_problems}'
-            plt.text(0.02, -0.12, total_solved_problems_text, transform=ax.transAxes, fontsize=12)
+            footer_position = -0.2  # Adjust this value to move the text lower
+            plt.text(0.02, footer_position, total_solved_problems_text, transform=ax.transAxes, fontsize=12)
+
 
             # Format y-axis labels with commas
             ax.yaxis.set_major_formatter(FuncFormatter(format_func))
