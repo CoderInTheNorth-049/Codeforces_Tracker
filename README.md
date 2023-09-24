@@ -16,3 +16,14 @@ Before running the script, make sure you have the following installed:
    ```bash
    git clone https://github.com/your-username/Codeforces_Tracker.git
 
+2. Navigate to Project Directory:
+
+   ```bash
+   cd Codeforces_Tracker
+
+3. Run the Script:
+
+   ```bash
+   python codeforces.py
+This will generate
+
