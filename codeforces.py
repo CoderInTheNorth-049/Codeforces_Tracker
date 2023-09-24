@@ -163,14 +163,18 @@ if __name__ == '__main__':
             plt.tight_layout()
 
             # Save the graph with a filename based on the date
-            timestamp = pd.Timestamp.now().strftime('%Y_%m_%d_%H_%M_%S')
+            output_directory = "Problem_Solved"  # Change this to your desired directory path
+            os.makedirs(output_directory, exist_ok=True)  # Create the directory if it doesn't exist
+            timestamp = pd.Timestamp.now().strftime('%Y_%m_%d')
             graph_filename = f'{username}_problems_graph_{timestamp}.png'
 
-            # Check if the file already exists, and if so, remove it
-            if os.path.exists(graph_filename):
-                os.remove(graph_filename)
+            graph_filepath = os.path.join(output_directory, graph_filename)
 
-            plt.savefig(graph_filename)
+            # Check if the file already exists, and if so, remove it
+            if os.path.exists(graph_filepath):
+                os.remove(graph_filepath)
+
+            plt.savefig(graph_filepath)
 
             # Close the figure to free up resources (optional)
             plt.close()
@@ -228,14 +232,18 @@ if __name__ == '__main__':
             plt.tight_layout()
 
             # Save the graph with a filename based on the date
-            timestamp = pd.Timestamp.now().strftime('%Y_%m_%d_%H_%M_%S')
+            output_directory = "Contest_Rating"  # Change this to your desired directory path
+            os.makedirs(output_directory, exist_ok=True)  # Create the directory if it doesn't exist
+            timestamp = pd.Timestamp.now().strftime('%Y_%m_%d')
             graph_filename = f'{username}_rating_graph_{timestamp}.png'
 
-            # Check if the file already exists, and if so, remove it
-            if os.path.exists(graph_filename):
-                os.remove(graph_filename)
+            graph_filepath = os.path.join(output_directory, graph_filename)
 
-            plt.savefig(graph_filename)
+            # Check if the file already exists, and if so, remove it
+            if os.path.exists(graph_filepath):
+                os.remove(graph_filepath)
+
+            plt.savefig(graph_filepath)
 
             # Close the figure to free up resources (optional)
             plt.close()
