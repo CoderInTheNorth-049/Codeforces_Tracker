@@ -25,5 +25,5 @@ Before running the script, make sure you have the following installed:
 
    ```bash
    python codeforces.py
-This will generate
+   This will generate
 
