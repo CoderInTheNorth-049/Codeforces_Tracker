@@ -176,6 +176,15 @@ if __name__ == '__main__':
 
             plt.savefig(graph_filepath)
 
+            latest_dict = "Latest_Info"
+            os.makedirs(latest_dict, exist_ok=True)
+            graph_filename = 'solved_problems_graph.png'
+            graph_filepath = os.path.join(latest_dict, graph_filename)
+
+            if os.path.exists(graph_filepath):
+                os.remove(graph_filepath)
+            plt.savefig(graph_filepath)
+
             # Close the figure to free up resources (optional)
             plt.close()
 
@@ -243,6 +252,16 @@ if __name__ == '__main__':
             if os.path.exists(graph_filepath):
                 os.remove(graph_filepath)
 
+
+            plt.savefig(graph_filepath)
+
+            latest_dict = "Latest_Info"
+            os.makedirs(latest_dict, exist_ok=True)
+            graph_filename = 'contest_rating_graph.png'
+            graph_filepath = os.path.join(latest_dict, graph_filename)
+
+            if os.path.exists(graph_filepath):
+                os.remove(graph_filepath)
             plt.savefig(graph_filepath)
 
             # Close the figure to free up resources (optional)
