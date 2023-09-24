@@ -55,4 +55,6 @@ GitHub Actions are set up to run the script and update your GitHub profile with 
 ![Latest Rating Graph](https://github.com/CoderInTheNorth-049/Codeforces_Tracker/blob/main/Latest_Info/solved_problems_graph.png)
 
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/CoderInTheNorth-049/Codeforces_Tracker/blob/main/LICENSE) file for details.
 
