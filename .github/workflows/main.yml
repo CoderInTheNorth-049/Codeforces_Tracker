@@ -31,5 +31,4 @@ jobs:
           git commit -m 'Update graphs'
           git push https://${{ secrets.GH_PAT }}@github.com/CoderInTheNorth-049/Codeforces_Tracker.git
         env:
-          pythonLocation: /opt/hostedtoolcache/Python/3.11.5/x64
-          LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib
+          GH_PAT: ${{ secrets.GH_PAT }}
